@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:rgb(214, 199, 199);
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-size: auto;
+            background-position: center;
+            height: 60px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            color: white;
+            padding: 18px 24px;
+            background-color: black;
+        }
+
+        header h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 24px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav ul li a:hover {
+            color: #e70f0f;
+            transform: scale(1.1);
+        }
+
+        main {
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color:black;
+            padding: 40px 16px 16px 16px;
+        }
+
+        .flex_item {
+            margin-top: 32px;
+            background: #fff;
+            color: black;
+            padding: 18px 36px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s;
+            display: inline-block;
+        }
+
+        .flex_item:hover {
+            transform: translateY(-6px) scale(1.05);
+            box-shadow: 0 8px 24px rgba(232,0,0,0.25);
+            background: #e80000;
+            color: #fff;
+        }
+
+        footer {
+            background: black;
+            color: #fff;
+            text-align: center;
+            padding: 18px 0 12px 0;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #e80000;
+            text-decoration: none;
+            margin: 0 4px;
+            transition: color 0.2s;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        @media (max-width: 1024px) {
+            header {
+            padding: 14px 20px;
+            height: 56px;
+            }
+            nav ul {
+            gap: 18px;
+            }
+            main {
+            padding: 32px 12px 12px 12px;
+            }
+            .flex_item {
+            padding: 16px 28px;
+            font-size: 1.05rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+            flex-direction: column;
+            align-items: flex-start;
+            height: auto;
+            padding: 16px 12px;
+            }
+            header h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            }
+            nav ul {
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+            background: rgba(183,0,0,0.95);
+            border-radius: 8px;
+            padding: 10px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            }
+            nav ul li {
+            width: 100%;
+            }
+            nav ul li a {
+            display: block;
+            padding: 10px 0;
+            border-radius: 6px;
+            transition: background 0.2s, color 0.2s;
+            }
+            nav ul li a:hover {
+            background: #fff;
+            color: #b70000;
+            }
+            main {
+            padding: 24px 6px 6px 6px;
+            }
+            .flex_item {
+            width: 100%;
+            text-align: center;
+            padding: 14px 0;
+            font-size: 1rem;
+            border-radius: 10px;
+            }
+            footer {
+            font-size: 0.97rem;
+            padding: 14px 0 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+            padding: 10px 4px;
+            }
+            header h3 {
+            font-size: 1.05rem;
+            letter-spacing: 0.5px;
+            }
+            nav ul {
+            gap: 8px;
+            padding: 8px 0;
+            }
+            main {
+            padding: 12px 2px 2px 2px;
+            }
+            .flex_item {
+            font-size: 0.95rem;
+            padding: 12px 0;
+            border-radius: 8px;
+            }
+            footer {
+            font-size: 0.92rem;
+            padding: 10px 0 8px 0;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h3>MY BRAND</h3>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Feature</a></li>
+                <li><a href="services.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to My Website</h1>
+        <p>This is aa simple HTML page with a header and navigation.</p>
+        <p>Feel free to explore the links in the navigation menu.</p>
+        <div class="flex_item">Get Started</div>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Brand. All rights reserved.</p>
+        
+    </footer>
+</body>
+</html>

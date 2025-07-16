@@ -1,0 +1,46 @@
+
+*{
+    background-color: black;
+  
+}
+
+div{
+    *{
+    margin-left: 40%;
+
+    
+}
+}
+fieldset {
+  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+     text-align: center; 
+     width:400px;
+     height:250px;
+      color: blanchedalmond;
+      background-image: url(https://tse4.mm.bing.net/th?id=OIP.24aENBNBhXIg86pwyCJPPwHaEc&pid=Api&P=0&h=220);
+      background-repeat: no-repeat;
+      background-size:contain;
+      border-radius: 20px;
+}
+
+legend{
+ font-style: italic;
+ font-size: medium;
+ color: red;
+ 
+  
+}
+
+p{
+ align-items: end;
+ margin-top: 160px;
+ margin-left:40%;
+ background-color:red;
+}
+
+.card{
+    background-color: aqua;
+}
+

@@ -1,0 +1,83 @@
+<!-- CSS Flexbox (short for Flexible Box Layout) is a layout model in CSS3  -->
+<!-- designed to help distribute space and align content within a container,  -->
+<!-- especially when the size of the items is unknown or dynamic. -->
+<!--  -->
+<!-- 🔧 How It Works -->
+<!-- You create a flex container and its flex items: -->
+<!--  -->
+<!-- The container uses display: flex; -->
+<!--  -->
+<!-- The items inside it respond to layout rules like spacing, alignment, and direction -->
+<!--  -->
+<!--  -->
+<!-- 🔑 Key Flexbox Properties -->
+<!--  -->
+<!-- On the Container: -->
+<!-- display: flex; – Enables flexbox layout. -->
+<!--  -->
+<!-- flex-direction – Row or column layout (row, column, etc.). -->
+<!--  -->
+<!-- justify-content – Horizontal alignment (flex-start, center, space-between, etc.). -->
+<!--  -->
+<!-- align-items – Vertical alignment of items (stretch, center, etc.). -->
+<!--  -->
+<!-- flex-wrap – Whether items wrap onto multiple lines. -->
+<!--  -->
+<!-- On the Items: -->
+<!-- flex – A shorthand for setting grow, shrink, and basis (flex: 1). -->
+<!--  -->
+<!-- align-self – Override alignment for a single item. -->
+<!--  -->
+<!-- order – Control item order regardless of source HTML. -->
+<!--  -->
+<!-- Why Use Flexbox? -->
+<!-- Easy centering of items. -->
+<!--  -->
+<!-- Better space distribution and alignment than older models like floats or inline-block. -->
+<!--  -->
+<!-- Responsive design: adapts well to different screen sizes. -->
+<!--  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox Example</title>
+  <style>
+  
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 200px;
+      background-color: #f0f0f0;
+      border: 2px dashed #ccc;
+    }
+
+    .flex-item {
+      background-color: #4caf50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      width: 100px;
+    }
+   
+  </style>
+</head>
+<body>
+
+  <h2>Flexbox Layout Example</h2>
+  <div class="flex-container">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+header{
+ 
+    color: whitesmoke;
+    align-content:start;
+    font-size:60px;
+    margin-left: 40%;
+
+}
+
+div{
+       background-color: black;
+}
+
+h1{
+    align-content: center;
+    margin-left: 30%;
+    margin-top: 70px;
+    font-size:50px;
+}
+
+button{
+    margin-left:52%;
+    background-color: blue;
+    color: white;
+    padding:10px;
+    margin-top: 10%;
+    border: 2px  black solid ;
+    border-radius:5px;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    margin-top: 250px;
+    padding:20px;
+   font-size:20px;
+  text-align: center;
+}
