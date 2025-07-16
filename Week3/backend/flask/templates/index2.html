@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h1>Give Your Feedback</h1>
+
+    <form method="POST">
+        {{ form.hidden_tag() }} 
+
+        <p>
+            {{ form.name.label }}<br>
+            {{ form.name(size=30) }}<br>
+            {% for error in form.name.errors %}
+                <span style="color: red;">[{{ error }}]</span><br>
+            {% endfor %}
+        </p>
+
+        <p>
+            {{ form.feedback.label }}<br>
+            {{ form.feedback(rows=5, cols=30) }}<br>
+            {% for error in form.feedback.errors %}
+                <span style="color: red;">[{{ error }}]</span><br>
+            {% endfor %}
+        </p>
+
+        <p>{{ form.submit() }}</p>
+    </form>
+</body>
+</html>
