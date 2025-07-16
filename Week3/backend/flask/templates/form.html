@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form method="POST">
+    <input type="hidden" name="csrf_token" value="{{ form.csrf_token._value() }}">
+    
+    Name: <input type="text" name="name" value="{{ form.name.data }}">
+    {% for error in form.name.errors %}
+        <span style="color: red;">{{ error }}</span>
+    {% endfor %}
+    
+    Feedback: <textarea name="feedback">{{ form.feedback.data }}</textarea>
+    {% for error in form.feedback.errors %}
+        <span style="color: red;">{{ error }}</span>
+    {% endfor %}
+    
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
