@@ -1,0 +1,6 @@
+2025-06-23 13:25:48,639-ERROR-number can't e divide by zero
+Traceback (most recent call last):
+  File "c:\Users\ASUS\OneDrive\Desktop\Python FullStack\Week2\Day6.py", line 100, in divide
+    result = a/b
+             ~^~
+ZeroDivisionError: division by zero
